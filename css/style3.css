@@ -580,7 +580,6 @@ input::placeholder {
 
 @media (max-width: 320px) {
     .popular-card {
-        border: 1px solid red;
         min-width: 250px;
         max-height: 500px;
     }
