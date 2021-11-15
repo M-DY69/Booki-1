@@ -267,7 +267,6 @@ input::placeholder {
     flex-wrap: wrap;
     flex-basis: 100%;
     justify-content: space-evenly;
-
 }
 
 /* END OF POPULAR */
@@ -512,6 +511,10 @@ input::placeholder {
 #activities > .activitiesCard, #activities > .miniCard1, .miniCard2 {
     width: 100%;
     }
+
+footer > * {
+    margin-left: -100px;   
+    }
 }
 
 /* END OF MEDIA QUERIES RESPONSIVE TABLET (min-width: 768px) and (max-width: 991px) */
@@ -530,12 +533,13 @@ input::placeholder {
         margin-bottom: 20px;
     } 
 
-    .activitiesCard{
+    .activitiesCard {
         min-height: 175px;
         max-height: 175px;
         margin-bottom: 25px;
     }
-    .activitiesCard img{
+
+    .activitiesCard img {
         flex: 1;
         min-height: 20%;
         object-fit: cover;
@@ -548,37 +552,112 @@ input::placeholder {
 
     footer {
         flex-direction: column; 
-    }
-    .footer {
         width: 100%;
+    }
+
+    footer > * {
+        margin-left: 10px;
     }
 }
 
 /* END OF MEDIA QUERIES 767PX (RESPONSIVE MOBILE) */
 
-/* MEDIA QUERIES 475PX (RESPONSIVE MOBILE) */
+/* MEDIA QUERIES 476PX (RESPONSIVE MOBILE) */
 
-@media (max-width: 475px) {
-    .popular-card  {
-        min-width: 250px;
-        max-height: 300px;  
+@media (max-width: 476px) {
+    .wrapper h1 {
+        margin-top: 30PX;
+        font-size: 27px;
+        width: 100%;
+        margin-bottom: 30px;
     }
-    
+
     .search-form input  {
         max-width: 220px;
     }
 
     input::placeholder {
         overflow: visible;
-        font-size: 13.1px;   
+        font-size: 18px; 
+        opacity: 1;  
+    }
+
+    #small-text {
+        margin-bottom: 30px;
+    }
+
+    .filter-list h1 {
+        margin-bottom: 5px;
+        font-size : 20px;
+    }
+
+    .city a {
+        display: inherit;
+        margin-top: 40px;
+        margin-left: -15PX;
+        margin-bottom: 20px;
+        font-size : 17px
+    }
+
+    .city .apartment-card {
+        max-height: 270PX;   
+    }
+
+    .apartments-list > div {
+        background-color: inherit;
+        border-radius: inherit;
+        background-color: var(--lightgrey);
+    }
+
+    .apartments-list > .city {
+        background-color: white   
+    }
+
+    .popular-card  {
+        min-width: 250px;
+    }
+    
+    #activities p {
+        font-size: 18.5PX
+    }
+
+    footer > * {
+        margin-left: 10px;
     }
 }
 
-/* END OF MEDIA QUERIES 475PX (RESPONSIVE MOBILE) */
+/* END OF MEDIA QUERIES 476PX (RESPONSIVE MOBILE) */
 
-/* MEDIA QUERIES 320PX (RESPONSIVE MOBILE)  */
+/* MEDIA QUERIES 380PX (RESPONSIVE MOBILE)  */
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
+    #logo {
+        margin-left: 175PX;
+    }
+
+    nav {
+        display: inherit;
+    }
+
+    .sub-nav a {
+       min-width: 215px;
+       max-height: 100px;
+    }
+
+    .search-form {
+        margin-right: 25PX;
+    }
+
+    .fas.fa-search{
+        margin-right: -5px;
+        margin-left: -5PX
+    }
+
+    .input::placeholder {
+        opacity: 1;
+        
+    }
+
     .popular-card {
         min-width: 250px;
         max-height: 500px;
@@ -591,13 +670,13 @@ input::placeholder {
         margin-bottom: 20px;
     } 
 
-    .activitiesCard{
-        min-height: 300px;
-        max-width: 2000px;
+    .activitiesCard {
+        min-height: 150px;
+        max-width: 295px;
         margin-bottom: 25px;
     }
 
-    .activitiesCard img{
+    .activitiesCard img {
         flex: 1;
         min-height: 40%;
         object-fit: cover;
@@ -607,10 +686,40 @@ input::placeholder {
     #activities > .activitiesCard, #activities > .miniCard1, .miniCard2 {
         width: 100%;
     }
+
+    footer > div {
+        margin-left: 20px;
+    }
 }
 
-/* END OF MEDIA QUERIES 320PX (RESPONSIVE MOBILE) */
+/* END OF MEDIA QUERIES 380PX (RESPONSIVE MOBILE) */
 
+/* MEDIA QUERIES 330PX (RESPONSIVE MOBILE) */
+
+@media (max-width: 330px) {
+    .popular {
+        width: 270PX;
+    }
+
+    .city {
+        width: 270px
+    }
+
+    #activities {
+        width: 260px
+    }
+
+    .activitiesCard {
+        max-width: 300px;
+    }
+
+    footer {
+        width: 300px;
+        margin-left: 20px;  
+    }
+}
+
+/* END OF MEDIA QUERIES 330PX (RESPONSIVE MOBILE) */
 
 
 
